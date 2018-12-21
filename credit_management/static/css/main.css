@@ -11,6 +11,10 @@ button {
 	color: red;
 }
 
+.table {
+    table-layout:fixed;
+}
+
 .cent {
 	text-align: center;
 }
@@ -36,7 +40,7 @@ button {
 	text-decoration: none;
 	color:#8cc2ff;
 	padding: 4px 5px;
-	
+
 }
 
 .brand-logo {
@@ -46,7 +50,7 @@ button {
 }
 
 .tagline {
-	border-bottom: 1px solid burlywood;	
+	border-bottom: 1px solid burlywood;
 }
 
 .notice {
