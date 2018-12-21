@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{%extends 'basicfunc/base.html'%}
+{%load staticfiles%}
+
+	{%block body_block%}
+	
+	<table class="table table-dark">
+		<thead>
+			<th>
+				#
+			</th>
+			<th>
+				Name
+			</th>
+			<th>
+				E-mail
+			</th>
+			<th>
+				Credits
+			</th>
+		</thead>
+		<tbody>
+			{%for x in users%}
+			<tr>
+				<td>
+					{{forloop.counter}}
+				</td>
+				<td>
+					{{x.name}}
+				</td>
+				<td>
+					{{x.email}}
+				</td>
+				<td>
+					{{x.credit_points}}
+				</td>
+			</tr>
+			{%endfor%}
+		</tbody>
+	</table>
+	<a href="{%url 'index'%}" class="btn btn-lg btn-dark">Back</a>
+	{%endblock%}

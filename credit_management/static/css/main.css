@@ -1,0 +1,59 @@
+body {
+	font-family: 'Monsterrat',sans-serif;
+	background-image: url("https://cdn.hipwallpaper.com/i/44/92/DjoFAH.jpg");
+	background-size: 1000%;
+}
+
+button {
+	width: 100%;
+}
+.error {
+	color: red;
+}
+
+.cent {
+	text-align: center;
+}
+
+
+.button.names {
+	border: none;
+	margin: 0px;
+	color: white;
+	background-color:inherit;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 2px 0px;
+	-webkit-transition-duration: 0.3s;
+	transition: all 0.4s;
+	transition-duration: 0.3s;
+	cursor:pointer;
+}
+
+.button.names:hover {
+	text-decoration: none;
+	color:#8cc2ff;
+	padding: 4px 5px;
+	
+}
+
+.brand-logo {
+	width: 40px;
+	height: 40px;
+	margin-right: 5px;
+}
+
+.tagline {
+	border-bottom: 1px solid burlywood;	
+}
+
+.notice {
+	font-weight: bold;
+}
+
+.hovering-over {
+	border:2px black;
+	border-style: outset;
+}
