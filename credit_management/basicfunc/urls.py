@@ -14,7 +14,7 @@ links = [Participant.objects.all()[x].link for x in range(Participant.objects.co
 # urlpatterns for all
 
 urlpatterns = [
-	url(r'^$', views.base, name='index'),
+	url(r'^$', views.HomeView.as_view(), name='index'),
 	url(r'^show_users/$', views.disp_users, name='viewUser'),
 	url(r'^show_users/%s' % links, views.single_user, name='dhaval'),
 	url(r'^display/$', views.display_table, name='showcase'),

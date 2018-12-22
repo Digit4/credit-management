@@ -18,10 +18,14 @@
 			<tr>
 				<td>{{forloop.counter}}</td>
 				<td>{{user_dat.donor.email}}</td>
-				<td>{{user_dat.target}}</td>
+				<td>{{user_dat.target.email}}</td>
 				<td>{{user_dat.weight}}</td>
 			</tr>
 			{%endfor%}
 		</tbody>
 	</table>
+	<form method="POST">
+		{%csrf_token%}
+		<input type="submit" value="Delete All History" class="btn btn-danger btn-lg">
+	</form>
 	{%endblock%}
