@@ -5,7 +5,7 @@ from django.db import models
 class Participant(models.Model):
 	name = models.CharField(max_length=264)
 	email = models.CharField(max_length=264, primary_key=True)
-	credit_points = models.IntegerField()
+	credit_points = models.PositiveIntegerField()
 	link = models.CharField(max_length=100)
 
 	def __str__(self):
@@ -17,8 +17,8 @@ class Participant(models.Model):
 
 # Transaction history table
 class TransferHistory(models.Model):
-	donor = models.ForeignKey(Participant, on_delete=models.PROTECT)
-	target = models.EmailField(default=None)
+	donor = models.ForeignKey(Participant, on_delete=models.CASCADE,related_name="donor")
+	target = models.ForeignKey(Participant,on_delete=models.CASCADE, related_name="target")
 	weight = models.IntegerField()
 
 	def __str__(self):
