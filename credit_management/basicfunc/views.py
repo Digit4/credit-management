@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.generic import View, TemplateView, ListView, DetailView
 from basicfunc.models import Participant, TransferHistory
-from basicfunc.forms import TransferCredits, CreationForm
+from basicfunc.forms import TransferCredits
 import datetime
 
 
