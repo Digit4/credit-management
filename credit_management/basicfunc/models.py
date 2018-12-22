@@ -17,8 +17,8 @@ class Participant(models.Model):
 
 # Transaction history table
 class TransferHistory(models.Model):
-	donor = models.ForeignKey(Participant, on_delete=models.CASCADE,related_name="donor")
-	target = models.ForeignKey(Participant,on_delete=models.CASCADE, related_name="target")
+	donor = models.ForeignKey(Participant, on_delete=models.CASCADE, related_name="donor")
+	target = models.ForeignKey(Participant, on_delete=models.CASCADE, related_name="target")
 	weight = models.IntegerField()
 
 	def __str__(self):
