@@ -21,6 +21,6 @@ def addUser(n=10):
 
 		
 if __name__ == "__main__":
-	print("Changing Links")
+	print("Adding Users")
 	addUser()
 	print("Database Populated!")
