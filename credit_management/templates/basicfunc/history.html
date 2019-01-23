@@ -17,8 +17,8 @@
 			{%for user_dat in entity%}
 			<tr>
 				<td>{{forloop.counter}}</td>
-				<td>{{user_dat.donor.email}}</td>
-				<td>{{user_dat.target.email}}</td>
+				<td>{{user_dat.donor.name}}</td>
+				<td>{{user_dat.target.name}}</td>
 				<td>{{user_dat.weight}}</td>
 			</tr>
 			{%endfor%}
